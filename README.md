@@ -1,5 +1,7 @@
 # Chinese Flashcards
 ## To do:
 - [x] Read up on FastAPI
-- [x] Going through the Intro User Guide and run first ever web server!
+- [x] Go through the demo on homepage and run first ever web server!
+- [ ] Go through the Python Types Intro page
+- [ ] Go through the Tutorial - User Guide page
 - [ ] Create the front page of the game (Or the root)
