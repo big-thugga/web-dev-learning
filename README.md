@@ -1,4 +1,4 @@
-# Chinese Flashcards
+# Web-dev learning checkpoints
 ## To do:
 - [x] Read up on FastAPI
   - Better than Django and Flask.
