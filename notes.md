@@ -27,10 +27,34 @@
     - Declared in the path operation function, just like a path or query parameter
   - Path operation functions can take multiple path and query parameters, on top of a body. If the parameter is declared in the path, it is used as a path parameter. If it is a singular type, it is used as a query parameter. If it is of type Pyndatic model, it is interpreted as a body request.
   
+
+## HTML and CSS
+- The main components of HTML are tags and attributes.
+- HTML is a markup language to create the structure of a webpage.
+- CSS is a markup language used to style a webpage. HTML reads in CSS to style the page. 
+- The two is used in conjunction, but the convention is to decouple them as much as possible. 
+  - We can use the *style attribute* in HTML tags 
+  <body style="text-align: center;> text </body>
   
+  - We can use the *style tag* in the head tag to change other HTML tag
+  <head>
+    <style>
+      body {
+      "text-align: center;"
+      }
+    </style>
+  </head>
+ 
+  - We can create **classes** that are a predefined set of styling that can be applied to tags. These classes can then be put into a styles.css *stylesheet*.
+ 
+
 ## React
 - [x] Read through React Quickstart
-  - React apps are made out of components. A component is a piece of the UI (user interface) that has its own logic and appearance. These components are JavaScript functions that return markup.
+  - React is a JavaScript library for building user interfaces and web apps.
+  - React apps are made out of **components**. A component is a piece of the UI (user interface) that has its own logic and appearance. These components are **JavaScript functions** that return **markup**.
     - React components must start with a capital letter. HTML tags always start with a lower case.
-  - The markup language that React uses is JSX, a syntax extension for JavaScript.
+  - The markup language that React uses is **JSX**, a syntax extension for JavaScript.
+  - A **JSX element** is a combination of JavaScript code and HTML tags that describes what you’d like to display.
+  - JSX elements have **properties**, or **props**, that are like HTML tag **attributes**. These are just key value pairs.
+  -
 
