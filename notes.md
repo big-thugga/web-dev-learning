@@ -33,18 +33,8 @@
 - HTML is a markup language to create the structure of a webpage.
 - CSS is a markup language used to style a webpage. HTML reads in CSS to style the page. 
 - The two is used in conjunction, but the convention is to decouple them as much as possible. 
-  - We can use the *style attribute* in HTML tags 
-  <body style="text-align: center;> text </body>
-  
+  - We can use the *style attribute* in HTML tags  
   - We can use the *style tag* in the head tag to change other HTML tag
-  <head>
-    <style>
-      body {
-      "text-align: center;"
-      }
-    </style>
-  </head>
- 
   - We can create **classes** that are a predefined set of styling that can be applied to tags. These classes can then be put into a styles.css *stylesheet*.
  
 
