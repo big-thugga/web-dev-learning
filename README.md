@@ -1,4 +1,4 @@
-# Web-dev learning checkpoints
+# Web-dev learning checkpoints and notes
 ## Backend using FastAPI
 - [x] Read up on FastAPI
   - Better than Django and Flask.
