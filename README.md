@@ -1,5 +1,5 @@
 # Web-dev learning checkpoints and notes
-## Backend using FastAPI
+## FastAPI
 - [x] Read up on FastAPI
   - Better than Django and Flask.
 - [x] Go through the demo on homepage and run my first ever web server!
