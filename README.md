@@ -29,13 +29,15 @@
   
 
 ## HTML/CSS/JavaScript
-- The main components of HTML are tags and attributes.
+- The main components of HTML are tags and attributes. <tag attribute="value"> display content </tag> (This whole thing is called an **element**)
+  - Multiple attributes are separate by just a space.
 - HTML is a markup language to create the structure of a webpage.
 - CSS is a markup language used to style a webpage. HTML reads in CSS to style the page. 
 - The two is used in conjunction, but the convention is to decouple them as much as possible. 
   - We can use the *style attribute* in HTML tags  
   - We can use the *style tag* in the head tag to change other HTML tags
   - We can create **classes** that are a predefined set of stylings that can be applied to tags. These classes can then be put into a styles.css *stylesheet*.
+    - The CSS **class selector** matches elements based on their class attribute.
 - npm is a package manager for JS.
  
 
@@ -46,7 +48,18 @@
     - React components must start with a capital letter. HTML tags always start with a lower case.
   - The markup language that React uses is **JSX**, a syntax extension for JavaScript.
   - A **JSX element** is a combination of JavaScript code and HTML tags that describes what you’d like to display.
-    - React components must only return *one* JSX element  
+    - React components must only return *one* JSX element. To do this, we use Fragment  
   - JSX elements have **properties**, or **props**, that are like HTML tag **attributes**. These are just key value pairs.
-  -
+  - **className** is the React equivalent to *class* in JS (because class is a keyword in JS)
+  - For nested components, there is more terse syntax <Component /> instead of <Component> </Component>.
+    - Nested components function like tags, where the attributes are the function inputs. 
+  - Curly braces are used to "exit out of JSX and enter into JS". Mainly used for refering to variables.
+  - React lets you define **event handlers** within components, which are just user defined JS functions.
+    - The convention is to prefix the function within the component with "handle".
+    - **Events** are written in camel case in React. (HTML is all lower case)
+    - Event handlers are passed as *props* to the *JSX element* based on the *event*. It can also just be defined inline (Can use anonymous functions) 
+      - Do not call the function, they must only be **passed** as a prop. 
+  - To remember things, components use **state**.
+    - React provides a special function called **useState** that you can call from your component to let it “remember” things. 
+    - const in JS to block scope and change the value of a variable only with a specified function.
 
