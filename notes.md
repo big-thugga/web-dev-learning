@@ -34,8 +34,8 @@
 - CSS is a markup language used to style a webpage. HTML reads in CSS to style the page. 
 - The two is used in conjunction, but the convention is to decouple them as much as possible. 
   - We can use the *style attribute* in HTML tags  
-  - We can use the *style tag* in the head tag to change other HTML tag
-  - We can create **classes** that are a predefined set of styling that can be applied to tags. These classes can then be put into a styles.css *stylesheet*.
+  - We can use the *style tag* in the head tag to change other HTML tags
+  - We can create **classes** that are a predefined set of stylings that can be applied to tags. These classes can then be put into a styles.css *stylesheet*.
  
 
 ## React
