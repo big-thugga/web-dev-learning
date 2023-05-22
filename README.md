@@ -61,5 +61,5 @@
       - Do not call the function, they must only be **passed** as a prop. 
   - To remember things, components use **state**.
     - React provides a special function called **useState** that you can call from your component to let it “remember” things. 
-    - const in JS to block scope and change the value of a variable only with a specified function.
+    - const is used here in JS to block scope and change the value of a variable only with a specified function.
 
