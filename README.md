@@ -60,6 +60,6 @@
     - Event handlers are passed as *props* to the *JSX element* based on the *event*. It can also just be defined inline (Can use anonymous functions) 
       - Do not call the function, they must only be **passed** as a prop. 
   - To remember things, components use **state**.
-    - React provides a special function called **useState** that you can call from your component to let it “remember” things. 
+    - React provides a special function called **useState** that you can call from your component to let it “remember” things. (Can it have multiple concurrent states?)
     - const is used here in JS to block scope and change the value of a variable only with a specified function.
 
