@@ -63,7 +63,7 @@
       - Do not call the function, they must only be **passed** as a prop. 
   - To remember things, components use **state**.
     - React provides a special function called **useState** that declares a state variable for that component. *The scope of the state variable is private to the component that defined it.*
-    - const is used here in JS to block scope and change the value of a variable only with a specified function.
+    - const is used here in JS to block scope and change the value of a variable only with the specified function.
     - Lifting state into a parent component from its children is good practice.
       - We can then pass values as a *prop* to the children. What is often needed as well is passing an **event handler** as a **prop** to the child component, such that it gets triggered based on an event (The event is not pertaining to the parent so to speak, but the scope of the state is in the parent. Therefore the event handler needs to be passed down to the child because that is where the event is triggered)
   - Functions starting with *use* are called **Hooks**. They are special in that they can only be called at the top of your components/other Hooks.
