@@ -54,12 +54,15 @@
   - For nested components, there is more terse syntax <Component /> instead of <Component> </Component>.
     - Nested components function like tags, where the attributes are the function inputs. 
   - Curly braces are used to "exit out of JSX and enter into JS". Mainly used for refering to variables.
-  - React lets you define **event handlers** within components, which are just user defined JS functions.
-    - The convention is to prefix the function within the component with "handle".
+  - User interactions is handled with **events**. Within the JSX element, we can define user interactions which it will listen for.
+    - A button JSX element has things like onClick. 
     - **Events** are written in camel case in React. (HTML is all lower case)
-    - Event handlers are passed as *props* to the *JSX element* based on the *event*. It can also just be defined inline (Can use anonymous functions) 
+  - React lets you define **event handlers** within components, which are just user defined JS functions detailing what happens when an event occurs.
+    - The convention is to prefix the function within the component with "handle".
+    - Event handlers are passed as *props* to the *JSX element* based on the *event*. It can also just be defined inline with an **arrow function**
       - Do not call the function, they must only be **passed** as a prop. 
   - To remember things, components use **state**.
-    - React provides a special function called **useState** that you can call from your component to let it “remember” things. (Can it have multiple concurrent states?)
+    - React provides a special function called **useState** that declares a state variable for that component. *The scope of the state variable is private to the component that defined it.*
     - const is used here in JS to block scope and change the value of a variable only with a specified function.
+    - Lifting state into a parent component from its children is good practice
 
