@@ -54,12 +54,18 @@
   - For nested components, there is more terse syntax <Component /> instead of <Component> </Component>.
     - Nested components function like tags, where the attributes are the function inputs. 
   - Curly braces are used to "exit out of JSX and enter into JS". Mainly used for refering to variables.
-  - React lets you define **event handlers** within components, which are just user defined JS functions.
-    - The convention is to prefix the function within the component with "handle".
+  - User interactions is handled with **events**. Within the JSX element, we can define user interactions which it will listen for.
+    - A button JSX element has things like onClick. 
     - **Events** are written in camel case in React. (HTML is all lower case)
-    - Event handlers are passed as *props* to the *JSX element* based on the *event*. It can also just be defined inline (Can use anonymous functions) 
+  - React lets you define **event handlers** within components, which are just user defined JS functions detailing what happens when an event occurs.
+    - The convention is to prefix the function within the component with "handle".
+    - Event handlers are passed as *props* to the *JSX element* based on the *event*. It can also just be defined inline with an **arrow function**
       - Do not call the function, they must only be **passed** as a prop. 
   - To remember things, components use **state**.
-    - React provides a special function called **useState** that you can call from your component to let it “remember” things. (Can it have multiple concurrent states?)
-    - const is used here in JS to block scope and change the value of a variable only with a specified function.
-
+    - React provides a special function called **useState** that declares a state variable for that component. *The scope of the state variable is private to the component that defined it.*
+    - const is used here in JS to block scope and change the value of a variable only with the specified function.
+    - Lifting state into a parent component from its children as a way to share/control states is good practice.
+      - We can then pass values as a *prop* to the children. What is often needed as well is passing an **event handler** as a **prop** to the child component, such that it gets triggered based on an event (The event is not pertaining to the parent so to speak, but the scope of the state is in the parent. Therefore the event handler needs to be passed down to the child because that is where the event is triggered)
+  - Functions starting with *use* are called **Hooks**. They are special in that they can only be called at the top of your components/other Hooks.
+    - useState is an inbuilt Hook provided by React.
+    -   
